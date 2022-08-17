@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-2;
+    margin-top: 75px;
+    text-align: center;
+    padding: 319px 0 320px 0;
+   
+    &-text {
+        &-heading {
+            font-family: $font-Montserrat;
+            font-size: var(--fz-5);
+            font-weight: var(--fw-5);
+            line-height: 39px;
+            text-align: center;
+        }
+        &-content {
+            width: 30%;
+            margin-top: 32px;
+            font-family: $font-Roboto;
+            font-size: var(--fz-1);
+            font-weight: var(--fw-2);
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+    &-more {
+        width: 172px;
+        height: 50px;
+        margin-top: 32px;
+        background-color: $color-1;
+        color: $color-btn;
+        font-family: $font-Roboto;
+        font-weight: var(--fw-2);
+        font-size: var(--fz-1);
+        border-radius: 10px;
+    }
+}

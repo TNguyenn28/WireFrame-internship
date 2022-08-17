@@ -1,0 +1,39 @@
+.slider {
+    background-color: $color-2;
+  
+}
+.swiper {
+    width: 100%;
+    background-color: $color-2;
+    &-slide {
+        padding: 316px 86px;
+        &-heading {
+            font-family: $font-Montserrat;
+            font-size: var(--fz-6) ;
+            font-weight: var(--fw-5);
+            line-height: 1.23;
+            margin-bottom: 16px;
+        }
+        &-content {
+            // padding-top: 16px;
+            max-width: 487px;
+            font-family: $font-Roboto;
+            font-size: var(--fz-1) ;
+            font-weight: var(--fw-2);
+            line-height: 1.2
+        }
+    }
+    &-button-next {
+        color: $black;
+    }
+    &-button-prev {
+        color: $black;
+    }
+    &-pagination-bullet-active {
+        margin-bottom: 32px;
+        background-color: $black;
+    }
+    &-pagination{
+        padding-bottom:32px;
+    }
+}
