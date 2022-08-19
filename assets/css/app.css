@@ -212,9 +212,11 @@ main {
   line-height: 1.2;
 }
 .swiper-button-next {
+  margin-right: 18%;
   color: #000000;
 }
 .swiper-button-prev {
+  margin-left: 18%;
   color: #000000;
 }
 .swiper-pagination-bullet {
@@ -421,6 +423,7 @@ main {
   background-color: white;
   border-radius: 40px;
   overflow: hidden;
+  border: none;
 }
 .footer-subcribe__input {
   display: flex;
@@ -528,6 +531,38 @@ main {
     font-size: var(--fz-0);
     font-weight: var(--fw-1);
     margin-right: 20px;
+  }
+  .swiper-slide-content {
+    position: absolute;
+    top: 316px;
+    left: 157px;
+  }
+  .swiper-slide-content__title {
+    font-size: var(--fz-5);
+    font-weight: var(--fw-3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .swiper-slide-content__text {
+    width: 44%;
+    font-size: var(--fz-0);
+    font-weight: var(--fw-1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .swiper-button-next {
+    margin-right: 5%;
+    color: #000000;
+  }
+  .swiper-button-prev {
+    margin-left: 4%;
+    color: #000000;
   }
   .product-nav {
     display: block;
@@ -657,9 +692,14 @@ main {
   .header-nav {
     width: 100%;
   }
+  .swiper-slide-content {
+    position: absolute;
+    top: 316px;
+    left: 87px;
+  }
   .swiper-slide-content__title {
-    font-size: var(--fz-4);
-    font-weight: var(--fw-2);
+    font-size: var(--fz-5);
+    font-weight: var(--fw-3);
   }
   .swiper-slide-content__text {
     font-size: var(--fz-0);
