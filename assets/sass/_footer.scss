@@ -1,23 +1,28 @@
 .footer {
+
     background-color: $color0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+
    hr{
+
     width: 100%;
+
    }
     
     &-form{
+
         width: 616px;
-        max-width: 100%;
         padding: 64px 0;
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: column; 
         border: none;
+
         p{
+
             font-family: $font-Poppins;
             font-size: var(--fz-3);
             font-weight: var(--fw-5);
@@ -27,55 +32,77 @@
         }
         
     }
-    &-group{
-        width: 100%;
+
+    &-subcribe{
+
+        margin-top: 16px;
         display: flex;
-        flex-direction: row;
-        height: 48px;
-        background-color: $white;
+        max-width: 616px;
+        background-color: white;
         border-radius: 40px;
-        &-input {
+        overflow: hidden;
+
+        &__input{
+
+            display: flex;
+            flex: 1;
             max-width: 50%;
+            min-height: 48px;
+            padding-left: 40px;
             font-family: $font-Poppins ;
             font-size: var(--fz-1);
             font-weight: var(--fw-1);
-            font-style: normal;
             border-radius: 40px;
-            padding: 0 40px;
+            border: none;
+            outline: none;  
         }
-        &-btn {
-            &-signup {
-                margin-left: auto;
-                padding: 0 40px;
-                background: none;
-                color: $black;
-                font-family: $font-Poppins;
-                font-size: var(--fz-1);
-                font-weight: var(--fw-4);
-                border-radius: 40px;
-            }
-            &-signup:hover{
-                background-color: $color-2;
-            }
+
+        &__button{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            min-height: 48px;
+            height: 100%;
+            padding: 0 40px;
+            font-family: $font-Poppins;
+            font-size: var(--fz-1);
+            font-weight: var(--fw-4);
+            background-color: white;
+            border-radius: 40px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        &__button:hover {
+
+            background-color: #333333;
+            color: white;
         }
     }
 
     &-center {
+
         border:none;
         display: flex;
         justify-content: space-between;
         margin: 64px 0;
         width: 938px;
         max-width: 100%;
-        height: 106px;
+        // height: 106px;
         padding: 0 20px;
+
         &-left {
+
             color: $white;
             font-family: $font-Montserrat;
             font-size: var(--fz-5);
             font-weight: var(--fw-5);
         }
+
         &-mid {
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -83,31 +110,44 @@
             gap: 158px;
            
             &__left {
+
                 display: flex;
                 flex-direction: column;
             }
+
             &__right {
+
                 display: flex;
                 flex-direction: column;
             }
         }
         &-item:nth-child(1) {
+
             color: $color;
             font-family: $font-Montserrat;
             font-weight: var(--fw-2);
             font-size: var(--fz-3);
+            // margin-top: -16px;
+            margin-bottom: 32px;
+
             
             
         }
         &-item {
-            padding-top: 16px;
+            margin-bottom: 16px ;
             color: $white;
             font-family: $font-Montserrat;
             font-size: var(--fz-1);
             font-weight: var(--fw-3);
+            
+            &:last-child{
+                margin-bottom: 0;
+               
+            }
         }
-
+        
         &-right {
+
             display: flex;
             .circle {
                 width: 32px;
@@ -122,7 +162,8 @@
     }
 
     &-bottom p {
-        padding:  32px 0;
+        
+        margin:  32px 0;
         color: $white;
         font-family: $font-Roboto;
         font-size: var(--fz-1);

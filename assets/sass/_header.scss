@@ -1,4 +1,5 @@
 .myHeader{
+
     // max-width: 1920px;
     width: 100%;
     position: fixed;
@@ -9,6 +10,7 @@
 }
 
 .header {
+
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,6 +18,7 @@
     padding: 10px 0;
 
     #toggle {
+
         display: none;
         background: #487eb0;
         color: $white;
@@ -31,6 +34,7 @@
         background-color: $color-3;
         text-align: center;
         border-radius: 10px;
+
         &-text {
             color: $color-1;
             font-family: $font-Roboto;
@@ -39,19 +43,23 @@
             line-height: 60px;
         }
     }
+
     &-nav {  
+
         &-list {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 40px;
         }
-        &-item {
+
+        &-item {           
             font-family: $font-Montserrat;
             font-size: var(--fz-1);
             font-weight: var(--fw-2);
+            margin-right: 40px;
             line-height: 18px;
             text-align: center;
+
             a {
                 color: $black;
             }
@@ -61,10 +69,14 @@
                 color: $color-3;
                 transition: all 0.3s;
             }
+          
         }
+        
         &-item:last-child{
-            padding-left:15px;
+            margin-left: 15px;
+            margin-right: 0;
         }
+
         .cart-quantity {
             padding: 4px 10px 4px 10px;
             margin-left: 10px;
@@ -87,6 +99,7 @@
     bottom: 0;
     background-color: 	rgba(0,0,0,0.2);
     z-index: 2;
+   
 }
 
 #toggle {

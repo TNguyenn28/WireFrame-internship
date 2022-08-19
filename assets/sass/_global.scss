@@ -1,17 +1,27 @@
 .wrapper {
-    // max-width: 1920px;
-    width: 100%;
+    // width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
    
 }
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1194px;
     width: 90%;
+    margin: 0 auto;
 }
+
 html{
+
     scroll-behavior:smooth;
 }
+
 .box-shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 15px 2px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px 2px;
+}
+
+main {
+    
+    margin-top: 80px;
 }

@@ -1,8 +1,14 @@
 @media screen and (max-width: 992px) {
+
     .header{
+
         &-nav{
-            &-list{
-                gap:20px;
+
+            &-item{
+
+                font-size:var(--fz-0);
+                font-weight: var(--fw-1);
+                margin-right: 20px;
             }
         }
     }
@@ -12,37 +18,75 @@
             display: block;
             overflow-y: hidden;
             overflow-x: scroll;
+
             &-list{
-                justify-content: start;
+                justify-content:space-around;
                 gap: 99px;
+                margin: 0  10px;
             }
+
             &-item{
                 font-size: var(--fz-2);
                 font-weight: var(--fw-1);
             }
         }
+
+        &-card {
+
+            &__title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
     }
+
+    .about{
+
+        &-text{
+
+            &-content{
+                width: 80%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+    
+
 }
 
 @media screen and (max-width: 768px) {
+
     .header {
+
         &-nav {
+
             position: absolute;
             top: -800px;
-            width: 50%;
+            width: 70%;
             right: 0;
             box-shadow: 0 5px 5px 5px rgb(0, 0, 0, 30%);
             transition: 0.6s;
             overflow: hidden;
-            z-index: 10;
+            z-index: 2;
+
             &-list {
                 flex-direction: column;
                 text-align: center;
                 background: #487eb0;
             }
+
             &-item {
-                padding: 10px;
+                padding: 15px;
             }
+
             &-item:hover {
                 text-decoration: underline;
                 transition: all 0.3s;
@@ -52,35 +96,46 @@
                 border-radius: 5px;
             }
         }
+
         #toggle {
             display: block;
         }
     }
+
     .active {
-        top: 80px;
+        top:80px;
         overflow: visible;
         transition: 0.6s;
     }
+
     .swiper {
+
         &-slide {
-            &-heading {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-            }
-            &-content {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
+
+            &-content{
+
+                &__title {
+
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+
+                &__text{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                }
             }
         }
     }
 
     .feature {
+
         &-list {
             display: grid;
             grid-template-areas:
@@ -92,14 +147,26 @@
 
     .product {
 
+        &-nav{
+
+            &-list{
+                justify-content:space-between;
+                gap: 50px;
+                margin: 0  10px;
+            }
+        }
+
         &-list-card {
             grid-template-columns: 1fr 1fr;
         }
     }
 
     .about{
+
         &-text{
+
             &-content{
+                width: 80%;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
@@ -110,12 +177,14 @@
     }
 
     .footer {
+
         &-form {
             width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         &-center {
             display: flex;
             align-items: center;
@@ -130,6 +199,7 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: row;
+
                 &__right {
                     padding: 32px 0;
                 }
@@ -139,12 +209,40 @@
 }
 
 @media screen and (max-width: 480px) {
+
     .header {
+
         &-nav {
             width: 100%;
         }
     }
-    .feature {    
+
+    .swiper{
+
+        &-slide{
+
+            &-content{
+
+                &__title{
+                    font-size: var(--fz-4);
+                    font-weight: var(--fw-2);
+                }
+
+                &__text {
+                    font-size: var(--fz-0);
+                    font-weight: var(--fw-1);
+                }
+            }
+        }
+    }
+
+    .feature { 
+        
+        &-heading {
+            font-size: var(--fz-5) ;
+            font-weight: var(--fw-4);
+        }
+    
         &-list {
             display: grid;
             grid-template-areas:
@@ -155,25 +253,45 @@
         }
     }
     .product {
+
+        &-heading {
+            font-size: var(--fz-5);
+            font-weight: var(--fw-4);
+        }
         &-nav {
+
             &-item {
+
                 a {
                     color: $black;
                 }
+
                 &-underline {
-                    margin-top: 1px;
-                   
+                    margin-top: 1px;            
                 }
+
+                font-size: var(--fz-2);
+                font-weight: var(--fw-2);
             }
         }
 
         &-list-card {
             grid-template-columns: 1fr;
         }
+
+        &-card {
+
+            &__title {
+                font-size: var(--fz-2);
+                font-weight: var(--fw-4);
+            }
+        }
     }
     
     .about{
+
         &-text{
+
             &-content{
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -183,24 +301,24 @@
             }
         }
     }
+
     .footer {
+
         &-form {
-            width: 80%;
-           
+            width: 80%;         
         }
-        &-group {
+
+        &-subcribe {
             width: 100%;
-            &-input {
+            
+            &__input {
                 padding: 0 20px;
             }
-            &-btn {
-                &-signup {
-                    padding: 0 20px;
-                    margin-left: auto;
-                }
-                
-            }
 
+            &__button{
+                padding: 0 20px;
+                margin-left: auto;
+            }
            
         }
     }

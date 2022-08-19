@@ -1,11 +1,14 @@
 :root {
+
     //font size
+    --fz-0:14px;
     --fz-1: 15px;
     --fz-2: 16px;
     --fz-3: 18px;
     --fz-4: 20px;
     --fz-5: 32px;
     --fz-6:48px;
+    
     //font wreight
     --fw-1: 300;
     --fw-2: 400;
@@ -27,7 +30,8 @@ $white: #ffffff;
 $color-1: #666666;
 $color-2: #E1E1E1;
 $color-3:#C4C4C4;
-$color-btn: #F2F2F2;
+$color-text: #F2F2F2;
 $color: #9D9D9D;
 $color0:#404040;
 $text: #656565;
+$color-btn:#333333;
