@@ -530,7 +530,7 @@ main {
   .header-nav-item {
     font-size: var(--fz-0);
     font-weight: var(--fw-1);
-    margin-right: 20px;
+    margin-right: 18px;
   }
   .swiper-slide-content {
     position: absolute;
