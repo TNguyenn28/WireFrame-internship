@@ -1,0 +1,21 @@
+// sass ./assets/sass/app.scss ./assets/css/app.css --watch 
+
+@import "reset";
+
+@import "variables";
+
+@import "global";
+
+@import "header";
+
+@import "slider";
+
+@import "featureProduct";
+
+@import "product";
+
+@import "about";
+
+@import "footer";
+
+@import "responsive"

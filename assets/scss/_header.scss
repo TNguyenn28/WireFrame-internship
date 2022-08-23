@@ -1,6 +1,4 @@
 .myHeader{
-
-    // max-width: 1920px;
     width: 100%;
     position: fixed;
     top:0;
@@ -18,7 +16,6 @@
     padding: 10px 0;
 
     #toggle {
-
         display: none;
         background: #487eb0;
         color: $white;
@@ -28,21 +25,7 @@
         cursor: pointer;
     }
     
-    .logo {
-        width: 60px;
-        height: 60px;
-        background-color: $color-3;
-        text-align: center;
-        border-radius: 10px;
 
-        &-text {
-            color: $color-1;
-            font-family: $font-Roboto;
-            font-size: var(--fz-4);
-            font-weight: var(--fw-5);
-            line-height: 60px;
-        }
-    }
 
     &-nav {  
 

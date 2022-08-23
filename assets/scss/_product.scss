@@ -48,7 +48,7 @@
             font-weight: var(--fw-2);
 
             &-underline {
-                width: 104px;
+                width: 100%;
                 height: 4px;
                 position: absolute;
                 bottom: 0;
@@ -73,6 +73,7 @@
             border-radius: 10px;
             background-color: $color-2;
             margin-bottom: 16px;
+            font-weight: bold;
         }
 
         &__title {
@@ -89,7 +90,7 @@
             font-family: $font-Montserrat;
             font-size: var(--fz-1);
             font-weight: var(--fw-2);
-            // line-height: 18.96px;
+            line-height: 18px;
 
         }
     }

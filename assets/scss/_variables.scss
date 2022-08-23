@@ -1,6 +1,7 @@
 :root {
 
     //font size
+    --fz-12:12px;
     --fz-0:14px;
     --fz-1: 15px;
     --fz-2: 16px;
@@ -17,6 +18,9 @@
     --fw-5: 700;
     }
     
+body{
+    --spacing:10px
+}
     
 
 // font-family

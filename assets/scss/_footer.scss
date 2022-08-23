@@ -16,6 +16,7 @@
     &-form{
 
         width: 616px;
+        max-width: 100%;
         padding: 64px 0;
         display: flex;
         flex-direction: column; 
@@ -34,36 +35,27 @@
     }
 
     &-subcribe{
-
         margin-top: 16px;
         display: flex;
         max-width: 616px;
         background-color: white;
-        border-radius: 40px;
+        border-radius: 99px;
         overflow: hidden;
-        border: none;
 
         &__input{
-
             display: flex;
             flex: 1;
-            max-width: 50%;
             min-height: 48px;
-            padding-left: 40px;
-            font-family: $font-Poppins ;
-            font-size: var(--fz-1);
-            font-weight: var(--fw-1);
-            border-radius: 40px;
+            padding-left: calc(4 * var(--spacing));
+            border-radius: 99px;
             border: none;
             outline: none;  
         }
 
         &__button{
-
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: auto;
             min-height: 48px;
             height: 100%;
             padding: 0 40px;
@@ -71,20 +63,18 @@
             font-size: var(--fz-1);
             font-weight: var(--fw-4);
             background-color: white;
-            border-radius: 40px;
+            border-radius: 99px;
             border: none;
             transition: 0.3s;
         }
 
         &__button:hover {
-
             background-color: $color-btn;
             color: white;
         }
     }
 
     &-center {
-
         border:none;
         display: flex;
         justify-content: space-between;
@@ -94,15 +84,15 @@
         padding: 0 20px;
 
         &-left {
-
-            color: $white;
-            font-family: $font-Montserrat;
-            font-size: var(--fz-5);
-            font-weight: var(--fw-5);
+            a{
+                color: $white;
+                font-family: $font-Montserrat;
+                font-size: var(--fz-5);
+                font-weight: var(--fw-5);
+            }
         }
 
         &-mid {
-
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,28 +100,24 @@
             gap: 158px;
            
             &__left {
-
                 display: flex;
                 flex-direction: column;
             }
 
             &__right {
-
                 display: flex;
                 flex-direction: column;
             }
         }
-        &-item:nth-child(1) {
 
+        &-item:nth-child(1) {
             color: $color;
             font-family: $font-Montserrat;
             font-weight: var(--fw-2);
-            font-size: var(--fz-3);
+            font-size: var(--fz-1);
             margin-bottom: 32px;
-
-            
-            
         }
+
         &-item {
             margin-bottom: 16px ;
             color: $white;

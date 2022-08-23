@@ -5,11 +5,14 @@
 .swiper {
     width: 100%;
     background-color: $color-2;
-    position: relative;
+   
 
     &-slide {
         height: 800px;
-
+        .container {
+            height: 100%;
+            position: relative;
+        }
         img {
             height: 100%;
             vertical-align: middle;
@@ -20,7 +23,9 @@
         &-content {
             position: absolute;
             top: 316px;
-            left: 467px;
+            // left: 87px;
+            left: 5.6vw;
+            right: 0;
 
             &__title {
                 font-family: $font-Montserrat;
@@ -40,16 +45,13 @@
         }
     }
 
-    &-button-next {
-        margin-right: 18%;
-        color: $black;
-    }
-
+    &-button-next, 
     &-button-prev {
-        margin-left: 18%;
         color: $black;
+        &:hover {
+            cursor: pointer;
+        }
     }
-
     &-pagination-bullet {
         width: 10px;
         height: 10px;

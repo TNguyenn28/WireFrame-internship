@@ -1,7 +1,9 @@
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".btn-container .swiper-button-next",
+      prevEl: ".btn-container .swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
