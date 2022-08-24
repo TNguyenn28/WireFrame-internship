@@ -23,7 +23,7 @@
                 }
 
                 &__text {
-                    width: 80%;
+                    width: 85%;
                     font-size: var(--fz-12);
                     font-weight: var(--fw-1);
                 }
@@ -306,8 +306,11 @@
         &-slide{
 
             &-content{
-                position: absolute;
-                top: 316px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 0;
+
                 &__title{
                     font-size: var(--fz-5);
                     font-weight: var(--fw-3);
@@ -319,7 +322,11 @@
                 }
             }
         }
-       
+
+        &-button-next, 
+        &-button-prev {
+            display: none;
+        }
     }
 
     .feature { 

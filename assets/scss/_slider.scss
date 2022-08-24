@@ -48,10 +48,8 @@
     &-button-next, 
     &-button-prev {
         color: $black;
-        &:hover {
-            cursor: pointer;
-        }
     }
+    
     &-pagination-bullet {
         width: 10px;
         height: 10px;

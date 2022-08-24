@@ -220,9 +220,6 @@ main {
 .swiper-button-next, .swiper-button-prev {
   color: #000000;
 }
-.swiper-button-next:hover, .swiper-button-prev:hover {
-  cursor: pointer;
-}
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -301,7 +298,6 @@ main {
   justify-content: center;
   gap: 128px;
   height: 100%;
-  padding: 0 10px;
 }
 .product-nav-item {
   position: relative;
@@ -542,7 +538,7 @@ main {
     font-weight: var(--fw-3);
   }
   .swiper-slide-content__text {
-    width: 80%;
+    width: 85%;
     font-size: var(--fz-12);
     font-weight: var(--fw-1);
   }
@@ -733,8 +729,10 @@ main {
     width: 100%;
   }
   .swiper-slide-content {
-    position: absolute;
-    top: 316px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
   }
   .swiper-slide-content__title {
     font-size: var(--fz-5);
@@ -743,6 +741,9 @@ main {
   .swiper-slide-content__text {
     font-size: var(--fz-0);
     font-weight: var(--fw-1);
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
   }
   .feature-heading {
     font-size: var(--fz-2);
