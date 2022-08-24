@@ -728,11 +728,15 @@ main {
   .header-nav {
     width: 100%;
   }
+  .swiper {
+    height: 600px;
+  }
   .swiper-slide-content {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 0;
+    top: 200px;
   }
   .swiper-slide-content__title {
     font-size: var(--fz-5);
@@ -745,6 +749,9 @@ main {
   .swiper-button-next, .swiper-button-prev {
     display: none;
   }
+  .feature {
+    margin-top: 56px;
+  }
   .feature-heading {
     font-size: var(--fz-2);
     font-weight: var(--fw-4);
@@ -753,6 +760,9 @@ main {
     display: grid;
     grid-template-areas: "f1" "f2" "f3" "f4";
     height: 1200px;
+  }
+  .product {
+    margin-top: 56px;
   }
   .product-heading {
     font-size: var(--fz-2);
