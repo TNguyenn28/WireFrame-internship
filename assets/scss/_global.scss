@@ -1,14 +1,23 @@
+html{
 
+    scroll-behavior:smooth;
+}
+
+main {
+    
+    margin-top: 80px;
+}
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
-   
 }
+
 .container {
     max-width: 1194px;
     width: calc(100% - 30px);
     margin: 0 auto;
 }
+
 .swiper-container {
     position: absolute;
     top: 50%;
@@ -21,17 +30,7 @@
     }
 }
 
-html{
-
-    scroll-behavior:smooth;
-}
-
 .box-shadow {
-
     box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px 2px;
 }
 
-main {
-    
-    margin-top: 80px;
-}

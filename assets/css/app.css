@@ -67,6 +67,14 @@ body {
   --spacing:10px ;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 80px;
+}
+
 .wrapper {
   max-width: 100%;
   margin: 0 auto;
@@ -89,16 +97,8 @@ body {
   position: relative;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px 2px;
-}
-
-main {
-  margin-top: 80px;
 }
 
 .myHeader {

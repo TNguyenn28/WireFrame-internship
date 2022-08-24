@@ -1,5 +1,4 @@
 @media screen and (max-width: 992px) {
-
     .header{
 
         &-nav{
@@ -12,11 +11,15 @@
             }
         }
     }
+
     .swiper{
+
         &-slide{
+
             &-content{
                 padding: 0 10px;
                 left: 10vw;
+
                 &__title{
                     font-size: var(--fz-5);
                     font-weight: var(--fw-3);
@@ -29,6 +32,7 @@
                 }
             }
         }
+
         &-button-next,
         &-button-prev  {
             color: $black;
@@ -36,11 +40,13 @@
     }
 
     .feature{
+
         &-heading{
             font-size: var(--fz-4) ;
             font-weight: var(--fw-4);
         }
     }
+
     .product {
        
         &-nav{
@@ -132,6 +138,7 @@
                 border-radius: 5px;
                 border-bottom: 1px ridge $white;
             }
+
             &-item:last-child{
                 margin: 0;
             }
@@ -147,6 +154,7 @@
         overflow: visible;
         transition: 0.6s;
     }
+
     .feature {
         
         &-heading{
@@ -170,6 +178,7 @@
             font-size: var(--fz-4) ;
             font-weight: var(--fw-4);
         }
+
         &-nav{
 
             &-list{
@@ -178,6 +187,7 @@
                 gap: 50px;
                 margin: 0  10px;
             }
+
             &-item{
                 font-size: var(--fz-0);
                 font-weight: var(--fw-1);
@@ -234,7 +244,7 @@
             justify-content: center;
             align-items: center;
 
-            p{
+            p {
             font-size: var(--fz-1);
             font-weight: var(--fw-3);
             }
@@ -404,7 +414,6 @@
                 font-size: var(--fz-12);
                 font-weight: var(--fw-2);
             }
-           
         }
     }
 }
