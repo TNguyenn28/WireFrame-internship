@@ -1,48 +1,51 @@
 html {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
 
-input,
-textarea,
-select,
-button {
-  border: none;
-  outline: none;
-}
+  input,
+  textarea,
+  select,
+  button {
+    background: none;
+    border: none;
+    outline: none;
+  }
 
-input {
-  line-height: normal;
-}
+  input {
+    line-height: normal;
+  }
 
-label,
-button {
-  cursor: pointer;
-}
+  label,
+  button {
+    cursor: pointer;
+  }
 
-ul {
-  list-style: none;
-}
+  ul{
+    list-style: none;
+  }
 
-li {
-  list-style-type: none;
-}
+  li{
+    list-style-type: none;
 
-a {
-  text-decoration: none;
-}
+  }
 
-img {
-  display: block;
-  max-width: 100%;
-}
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  

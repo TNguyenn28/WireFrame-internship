@@ -1,36 +1,40 @@
-html{
-
-    scroll-behavior:smooth;
-}
-
-main {
-    
-    margin-top: 80px;
-}
+// @use "sass:math";
 .wrapper {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+    height: 100%;
+    
+   
 }
 
 .container {
-    max-width: 1194px;
-    width: calc(100% - 30px);
+    max-width: 1186px;
     margin: 0 auto;
+    width: $width-container;
+    height: auto;
 }
 
-.swiper-container {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    z-index: 10;
-    transform: translate(50%, -50%);
-    
-    & .btn-container {
-        position: relative;
-    }
+.container-content{
+    max-width: 785px;
+    margin: 0 auto;
+    height: auto;
 }
 
-.box-shadow {
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px 2px;
+.footer-container {
+    max-width: 854px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+// .box-shadow{
+//     box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 30%);
+// }
+
+main {
+    padding-top: 102px;
+}

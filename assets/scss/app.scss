@@ -1,4 +1,4 @@
-// sass ./assets/sass/app.scss ./assets/css/app.css --watch 
+//  sass ./assets/scss/app.scss ./assets/css/app.css --watch
 
 @import "reset";
 
@@ -6,16 +6,14 @@
 
 @import "global";
 
-@import "header";
+@import 'header';
 
-@import "slider";
+@import 'product';
 
-@import "featureProduct";
+@import 'productContent';
 
-@import "product";
+@import 'accessories';
 
-@import "about";
+@import 'otherCollection';
 
-@import "footer";
-
-@import "responsive"
+@import 'footer';
